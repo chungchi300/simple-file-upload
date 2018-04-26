@@ -1,3 +1,3 @@
-export function getAuthor(name = "jeff"): string {
+export function getAuthorName(name = "jeff"): string {
   return name + "2018";
 }

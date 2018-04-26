@@ -4,10 +4,7 @@
     "module": "esnext",
     "target": "es5",
 
-    "baseUrl": "./",
-    "paths": {
-      "@app/*": ["src/*"]
-    },
+    "baseUrl": "./src",
 
     "lib": ["es6", "dom"],
     "sourceMap": true,
