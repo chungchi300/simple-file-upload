@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import * as React from "react";
-import DeleteForever from "./Delete.js";
+import Delete from "./Delete";
 
 interface Props {
   /* This prop is optional, since TypeScript won't know that it's passed by the wrapper */
@@ -22,7 +22,7 @@ class FileUpload extends React.Component<Props, any> {
               this.props.onChange({ target: { name: "file", files: [] } })
             }
           >
-            <DeleteForever />
+            <Delete />
           </div>
         </div>
       );
