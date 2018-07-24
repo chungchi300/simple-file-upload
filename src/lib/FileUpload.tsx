@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import * as React from "react";
-import DeleteForever from "../img/DeleteForever.js";
+import DeleteForever from "./Delete.js";
 
 interface Props {
   /* This prop is optional, since TypeScript won't know that it's passed by the wrapper */

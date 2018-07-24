@@ -14,7 +14,7 @@ var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cook
 };
 import styled from "styled-components";
 import * as React from "react";
-import DeleteForever from "../img/DeleteForever.js";
+import DeleteForever from "./Delete.js";
 var FileUpload = /** @class */ (function (_super) {
     __extends(FileUpload, _super);
     function FileUpload() {
