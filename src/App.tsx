@@ -2,7 +2,7 @@ import * as React from "react";
 import "./App.css";
 
 import logo from "./logo.svg";
-import { getAuthorName } from "helper";
+import { getAuthorName } from "helper/basic";
 const author = getAuthorName("Jeff Chung");
 
 class App extends React.Component {
