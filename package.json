@@ -1,9 +1,13 @@
 {
   "name": "simple-file-upload",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "dependencies": {
     "styled-components": "^2.1.2"
   },
+  "contributors": [
+    "Shavon Ling <shavon@gmail.com> - She is the main contributor :)",
+    "Jeff Chung <chungchi300@hotmail.com>(http://jeff-chung.com)"
+  ],
   "peerDependencies": {
     "react": "*",
     "react-dom": "*"
