@@ -1,5 +1,6 @@
 {
   "name": "simple-file-upload",
+  "homepage": "https://github.com/chungchi300/simple-file-upload/blob/master/README.md",
   "version": "0.3.0",
   "dependencies": {
     "styled-components": "^2.1.2"
