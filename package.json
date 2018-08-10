@@ -1,7 +1,7 @@
 {
   "name": "simple-file-upload",
   "homepage": "https://github.com/chungchi300/simple-file-upload/blob/master/README.md",
-  "version": "0.5.0",
+  "version": "0.7.0",
   "files": [
     "dist"
   ],
@@ -22,20 +22,22 @@
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "lib": "rm -rf dist&&npx tsc -d --outDir dist",
+    "build-lib": "rm -rf dist&&npx tsc -d --outDir dist",
     "eject": "react-scripts-ts eject",
-    "prepublish": "npm run test && npm run lin"
+    "format":"npx prettier  --write src/**/*.ts src/**/*.tsx",
+    "prepublish": "npm run format&&CI=true npm run test && npm run build-lib"
   },
   "devDependencies": {
+    "@svgr/cli": "^2.0.0",
     "@types/jest": "^22.2.3",
     "@types/node": "^9.6.6",
     "@types/react": "^16.3.12",
     "@types/react-dom": "^16.0.5",
+    "prettier": "1.14.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-scripts-ts": "2.15.1",
-    "typescript": "^2.8.3",
     "svgr": "^1.7.0",
-    "@svgr/cli": "^2.0.0"
+    "typescript": "^2.8.3"
   }
 }

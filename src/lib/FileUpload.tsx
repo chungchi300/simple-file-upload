@@ -6,7 +6,7 @@ interface Props {
   /* This prop is optional, since TypeScript won't know that it's passed by the wrapper */
   className?: string;
   file: any;
-  fieldName: string;
+  fieldName?: string;
   onChange: any;
 }
 class FileUpload extends React.Component<Props, any> {
@@ -48,7 +48,7 @@ class FileUpload extends React.Component<Props, any> {
             type="file"
             style={{ display: "none" }}
             // style={styles.fileInput}
-            name="file"
+            name={this.props.fieldName}
             onChange={event => {
               this.props.onChange(event);
               this.fileInput.value = "";
