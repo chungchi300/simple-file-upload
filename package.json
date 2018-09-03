@@ -1,14 +1,14 @@
 {
   "name": "simple-file-upload",
   "homepage": "https://github.com/chungchi300/simple-file-upload/blob/master/README.md",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "files": [
     "dist"
   ],
   "main": "dist/lib/FileUpload.js",
   "typings": "dist/lib/FileUpload.d.ts",
   "dependencies": {
-    "styled-components": "^2.1.2"
+    "styled-components": "^3.3.3"
   },
   "contributors": [
     "Shavon Ling <lingsuifong91@gmail.com> - She is the main contributor :)",
@@ -24,7 +24,7 @@
     "test": "react-scripts-ts test --env=jsdom",
     "build-lib": "rm -rf dist&&npx tsc -d --outDir dist",
     "eject": "react-scripts-ts eject",
-    "format":"npx prettier  --write src/**/*.ts src/**/*.tsx",
+    "format": "npx prettier  --write src/**/*.ts src/**/*.tsx",
     "prepublish": "npm run format&&CI=true npm run test && npm run build-lib"
   },
   "devDependencies": {
